@@ -21,9 +21,9 @@ module RocketChatNotifier
         message: message
       }
 
-      request_body[:event] = event if event.present?
-      request_body[:emoji] = emoji if emoji.present?
-      request_body[:attachment] = attachment if attachment.present?
+      request_body[:event] = event
+      request_body[:emoji] = emoji
+      request_body[:attachment] = attachment
 
       begin
         Rails.logger.debug("\nsending rocket chat notification request to webhook url:\n#{webhook_url}") if verbose_mode == true

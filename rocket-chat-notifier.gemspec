@@ -1,10 +1,10 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
+
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rocketchat/notifier/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rocketchat-notifier-webhook"
+  spec.name          = 'rocketchat-notifier-webhook'
   spec.version       = RocketChat::Notifier::VERSION
   spec.authors       = ["Christoph Bajohr"]
   spec.email         = ["christoph@bajohr.org"]
