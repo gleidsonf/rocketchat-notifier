@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rocketchat/notifier/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rocketchat-notifier"
+  spec.name          = "rocketchat-notifier-webhook"
   spec.version       = RocketChat::Notifier::VERSION
   spec.authors       = ["Christoph Bajohr"]
   spec.email         = ["christoph@bajohr.org"]
 
-  spec.summary       = "rocket.chat notifier gem"
-  spec.description   = "rocket.chat notifier gem, for firing event notifications to a rocket chat incoming webhook. For further information visit the github page: https://github.com/cbajohr/rocketchat-notifier"
-  spec.homepage      = "https://github.com/cbajohr/rocketchat-notifier"
+  spec.summary       = "rocket.chat notifier webhook gem"
+  spec.description   = "rocket.chat notifier webhook gem, for firing event notifications to a rocket chat incoming webhook. For further information visit the github page: https://github.com/gleidsonf/rocketchat-notifier."
+  spec.homepage      = "https://github.com/gleidsonf/rocketchat-notifier"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

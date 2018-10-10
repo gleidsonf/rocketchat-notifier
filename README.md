@@ -1,12 +1,14 @@
 # Rocket.Chat Notifier Gem
 rocket.chat notifier gem, for firing event notifications to a rocket chat incoming webhook.
 
+This gem is forked from [`rocketchat-notifier`](https://github.com/cbajohr/rocketchat-notifier).
+
 ## Installation
 
 Add this line to your application's *Gemfile*:
 
 ```ruby
-gem 'rocketchat-notifier'
+gem 'rocketchat-notifier-webhook'
 ```
 
 And then execute:
@@ -15,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rocketchat-notifier
+    $ gem install rocketchat-notifier-webhook
 
 create an initializer config *rocketchat-notifier.rb* to *config/initializers/* and add the following content and add your webhook url:
 
@@ -60,7 +62,7 @@ RocketChatNotifier.notify 'my message', emoji: ':ok:', event: 'my notifier', att
 Additionally you will need a parser script for your rocket.chat for the incoming webhook integration.
 
 If you don't want to code one yourself, here is a working script with basic functionality for you:
-https://github.com/cbajohr/rocketchat-notifier/wiki/rocket.chat---incoming-webhook-parser-script-example
+https://github.com/gleidsonf/rocketchat-notifier/wiki/rocket.chat---incoming-webhook-parser-script-example
 
 
 ## Post examples
@@ -108,7 +110,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/cbajohr/rocketchat-notifier. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gleidsonf/rocketchat-notifier. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
